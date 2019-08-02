@@ -8,7 +8,7 @@ In this assignment you're going to build an app that can predict which Titanic p
 
 The first thing you will need for your app is the passenger manifest of the Titanic's last voyage. You will use the famous [Kaggle Titanic Dataset](https://github.com/sbaidachni/MLNETTitanic/tree/master/MLNetTitanic) which has data for a subset of 891 passengers.
 
-Download the [test_data](https://github.com/sbaidachni/MLNETTitanic/blob/master/MLNetTitanic/test_data.csv) and [train_data](https://github.com/sbaidachni/MLNETTitanic/blob/master/MLNetTitanic/train_data.csv) files and save them to your project folder.
+Download the [test_data](https://github.com/mdfarragher/DSC/blob/master/BinaryClassification/TitanicPrediction/test_data.csv) and [train_data](https://github.com/mdfarragher/DSC/blob/master/BinaryClassification/TitanicPrediction/train_data.csv) files and save them to your project folder.
 
 The training data file looks like this:
 

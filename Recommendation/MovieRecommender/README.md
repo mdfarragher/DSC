@@ -4,7 +4,7 @@ In this assignment you're going to build a movie recommendation system that can 
 
 The first thing you'll need is a data file with thousands of movies rated by many different users. The [MovieLens Project](https://movielens.org) has exactly what you need.
 
-Download the [movie ratings for training](https://github.com/mdfarragher/Courses/blob/master/DSC/Recommendation/MovieRecommender/recommendation-ratings-train.csv), [movie ratings for testing](https://github.com/mdfarragher/Courses/blob/master/DSC/Recommendation/MovieRecommender/recommendation-ratings-test.csv), and the [movie dictionary](https://github.com/mdfarragher/Courses/blob/master/DSC/Recommendation/MovieRecommender/recommendation-movies.csv) and save these files in your project folder. You now have 100,000 movie ratings with 99,980 set aside for training and 20 for testing. 
+Download the [movie ratings for training](https://github.com/mdfarragher/DSC/blob/master/Recommendation/MovieRecommender/recommendation-ratings-train.csv), [movie ratings for testing](https://github.com/mdfarragher/DSC/blob/master/Recommendation/MovieRecommender/recommendation-ratings-test.csv), and the [movie dictionary](https://github.com/mdfarragher/DSC/blob/master/Recommendation/MovieRecommender/recommendation-movies.csv) and save these files in your project folder. You now have 100,000 movie ratings with 99,980 set aside for training and 20 for testing. 
 
 The training and testing files are in CSV format and look like this:
 ￼

@@ -4,7 +4,7 @@ In this assignment you're going to build an app that can detect anomalous spikes
 
 The first thing you'll need for your app is a data file to analyze. We are going to use the Shampoo Sales Dataset from DataMarket. This is a very simple set that contains shampoo sales volume for a hypothetical company over a 36-day period.
 
-[Download the sales file](https://github.com/mdfarragher/Courses/blob/master/DSC/TimeSeries/SalesSpikes/shampoo-sales.csv) and save it in your project folder as **shampoo-sales.csv**.
+[Download the sales file](https://github.com/mdfarragher/DSC/blob/master/TimeSeries/SalesSpikes/shampoo-sales.csv) and save it in your project folder as **shampoo-sales.csv**.
 
 Here’s what the dataset looks like:
 

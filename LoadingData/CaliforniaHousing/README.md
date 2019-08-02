@@ -4,13 +4,11 @@ In this assignment you're going to build an app that can load a dataset with the
 
 The first thing you'll need is a data file with house prices. The data from the 1990 California cencus has exactly what we need. 
 
-Download the [California 1990 housing census](#) and save it as **california_housing.csv**. 
+Download the [California 1990 housing census](https://github.com/mdfarragher/DSC/blob/master/LoadingData/CaliforniaHousing/california_housing.csv) and save it as **california_housing.csv**. 
 
 This is a CSV file with 17,000 records that looks like this:
 ￼
-
 ![Data File](./assets/data.png)
-
 
 The file contains information on 17k housing blocks all over the state of California:
 

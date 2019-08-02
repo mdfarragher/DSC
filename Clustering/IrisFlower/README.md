@@ -12,7 +12,7 @@ Your challenge is that you're not going to use the dataset labels. Your app has 
 
 Clustering is an example of **unsupervised learning** where the data science model has to figure out the labels on its own. 
 
-The first thing you will need for your app is a data file with Iris flower petal and sepal sizes. You can use this [CSV file](https://github.com/mdfarragher/Courses/blob/master/DSC/Clustering/IrisFlower/iris-data.csv). Save it as **iris-data.csv** in your project folder.
+The first thing you will need for your app is a data file with Iris flower petal and sepal sizes. You can use this [CSV file](https://github.com/mdfarragher/DSC/blob/master/Clustering/IrisFlower/iris-data.csv). Save it as **iris-data.csv** in your project folder.
 
 The file looks like this:
 

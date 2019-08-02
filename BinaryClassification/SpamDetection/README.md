@@ -4,7 +4,7 @@ In this assignment you're going to build an app that can automatically detect sp
 
 The first thing you'll need is a file with lots of SMS messages, correctly labelled as being spam or not spam. You will use a dataset compiled by Caroline Tagg in her [2009 PhD thesis](http://etheses.bham.ac.uk/253/1/Tagg09PhD.pdf). This dataset has 5574 messages.
 
-Download the [list of messages](https://github.com/mdfarragher/Courses/blob/master/DSC/BinaryClassification/SpamDetection/spam.tsv) and save it as **spam.tsv**.
+Download the [list of messages](https://github.com/mdfarragher/DSC/blob/master/BinaryClassification/SpamDetection/spam.tsv) and save it as **spam.tsv**.
 
 The data file looks like this:
 
