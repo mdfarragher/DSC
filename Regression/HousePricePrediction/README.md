@@ -129,7 +129,7 @@ $ code .
 The rest is up to you! 
 
 # Your assignment
-I want you to build an app that reads the train and test files in memory, processes them, and then trains a linear regression model on the data.
+I want you to build an app that reads the training and testing files in memory, processes them, and then trains a linear regression model on the data.
 
 You can select any combination of input features you like, and you can perform any kind of data processing you like on the columns. 
 
