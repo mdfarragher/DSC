@@ -19,8 +19,10 @@ In this case study you'll be working with the Iowa House Price dataset. This dat
 The data set contains 2930 records and a large number of feature columns involved in assessing home values. You can use any combination of features you like to generate your house price predictions.
 
 There are 2 files in the dataset:
-* **train.csv** which contains 1460 records, 80 input features, and one output label. You will use this file for training your model.
-* **test.csv** which contains 1459 records and 80 input features. You will use this file to test your trained model. 
+* [train.csv](https://github.com/mdfarragher/DSC/blob/master/Regression/HousePricePrediction/train.csv) which contains 1460 records, 80 input features, and one output label. You will use this file for training your model.
+* [test.csv](https://github.com/mdfarragher/DSC/blob/master/Regression/HousePricePrediction/test.csv) which contains 1459 records and 80 input features. You will use this file to test your trained model. 
+
+Download these two files and save them in your project folder.
 
 Here's a description of all 81 columns in the training file:
 * SalePrice - the property's sale price in dollars. This is the target variable that you're trying to predict.
@@ -108,8 +110,8 @@ Here's a description of all 81 columns in the training file:
 Go to the console and set up a new console application:
 
 ```bash
-$ dotnet new console -o HousePrices
-$ cd HousePrices
+$ dotnet new console -o HousePricePrediction
+$ cd HousePricePrediction
 ```
 
 Then install the ML.NET NuGet package:
