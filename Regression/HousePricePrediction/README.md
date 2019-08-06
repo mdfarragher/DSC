@@ -118,6 +118,7 @@ Then install the ML.NET NuGet package:
 
 ```bash
 $ dotnet add package Microsoft.ML
+$ dotnet add package Microsoft.ML.FastTree
 ```
 
 And launch the Visual Studio Code editor:
