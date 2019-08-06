@@ -23,7 +23,7 @@ The data set contains 285k records, 30 feature columns, and a single label indic
 There is a single file in the dataset:
 * [creditcard.csv](https://www.kaggle.com/mlg-ulb/creditcardfraud/downloads/creditcard.csv/3) which contains 285k records, 30 input features, and one output label. You will use this file to train and test your model.
 
-The file is about 150 MB in size. You'll need to download it from Kaggle to get started. [Create a Kaggle account](https://www.kaggle.com/account/login) if you don't have one yet. 
+The file is about 150 MB in size. You'll need to [download it from Kaggle](https://www.kaggle.com/mlg-ulb/creditcardfraud/downloads/creditcard.csv/3) to get started. [Create a Kaggle account](https://www.kaggle.com/account/login) if you don't have one yet. 
 
 Here's a description of all 31 columns in the data file:
 * Time: Number of seconds elapsed between this transaction and the first transaction in the dataset
