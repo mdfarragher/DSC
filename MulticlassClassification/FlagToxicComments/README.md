@@ -2,11 +2,11 @@
 
 Online discussions about things you care about can be difficult. The threat of abuse and harassment means that many people stop expressing themselves and give up on seeking different opinions. Many platforms struggle to effectively facilitate conversations, leading many communities to limit or completely shut down user comments.
 
-The Conversation AI team, a research initiative founded by Jigsaw and Google are working on tools to help improve online conversation. One area of focus is the study of negative online behaviors, like toxic comments that are rude, disrespectful or likely to make someone leave a discussion. 
+The Conversation AI team is a research initiative founded by Jigsaw and Google. It is working on tools to help improve online conversation. One area of focus is the study of negative online behaviors, like toxic comments that are rude, disrespectful or likely to make someone leave a discussion. 
 
-They have built a range of public tools to detect toxicity. But the current apps still make errors, and they don’t allow users to select which types of toxicity they’re interested in finding.
+The team has built a range of public tools to detect toxicity. But the current apps still make errors, and they don’t allow users to select which types of toxicity they’re interested in finding.
 
-In this case study, you’re going to build an app that is capable of detecting different types of of toxicity like threats, obscenity, insults, and identity-based hate. You’ll be using a dataset of comments from Wikipedia’s talk page edits.
+In this case study, you’re going to build an app that is capable of detecting different types of of toxicity like threats, obscenity, insults, and hate. You’ll be using a dataset of comments from Wikipedia’s talk page edits.
 
 How accurate will your app be? Do you think you will be able to flag every toxic comment? 
 
@@ -32,7 +32,7 @@ Here's a description of all columns in the training file:
 * **obscene**: 1 if the comment is obscene, 0 if it is not
 * **threat**: 1 if the comment is threatening, 0 if it is not
 * **insult**: 1 if the comment is insulting, 0 if it is not
-* **identity_hate**: 1 if the comment represents identity hatred, 0 if it does not
+* **identity_hate**: 1 if the comment expresses identity hatred, 0 if it does not
 
 # Getting started
 Go to the console and set up a new console application:
