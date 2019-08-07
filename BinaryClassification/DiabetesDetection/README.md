@@ -39,8 +39,8 @@ Here's a description of all columns in the file:
 Go to the console and set up a new console application:
 
 ```bash
-$ dotnet new console -o DetectDiabetes
-$ cd DetectDiabetes
+$ dotnet new console -o DiabetesDetection
+$ cd DiabetesDetection
 ```
 
 Then install the ML.NET NuGet package:
