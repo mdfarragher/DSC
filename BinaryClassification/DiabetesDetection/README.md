@@ -4,11 +4,11 @@ The Pima are a tribe of North American Indians who traditionally lived along the
 
 But there's a weird thing about the Pima: they have the highest reported prevalence of diabetes of any population in the world.  Their diabetes is exclusively type 2 diabetes, with no evidence of type 1 diabetes, even in very young children with an early onset of the disease.
 
-This suggests that the Pima carry a specific gene mutation that makes them extremely susceptive to Diabetes. The tribe has been the focus of many medical studies over the years.
+This suggests that the Pima carry a specific gene mutation that makes them extremely susceptive to diabetes. The tribe has been the focus of many medical studies over the years.
 
 In this case study, you're going to participate in one of these medical studies. You will build an app that loads a dataset of Pima medical records and tries to predict from the data who has diabetes and who has not. 
 
-How accurate will your app be? Do you think you will be able to correctly predict every single Diabetes case? 
+How accurate will your app be? Do you think you will be able to correctly predict every single diabetes case? 
 
 That's for you to find out! 
 
@@ -30,7 +30,7 @@ Here's a description of all columns in the file:
 * **SkinThickness**: the triceps skin fold thickness (mm)
 * **Insulin**: the 2-hour serum insulin concentration (mu U/ml)
 * **BMI**: the body mass index (weight in kg/(height in m)^2)
-* **DiabetesPedigreeFunction**: the Diabetes pedigree function
+* **DiabetesPedigreeFunction**: the diabetes pedigree function
 * **Age**: the age (years)
 * **Outcome**: the label you need to predict - 1 if the woman has diabetes, 0 if she has not
 
