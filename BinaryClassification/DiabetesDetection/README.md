@@ -19,9 +19,9 @@ That's for you to find out!
 In this case study you'll be working with a dataset containing the medical records of 768 Pima women. 
 
 There is a single file in the dataset:
-* [diabetes.csv](#) which contains 768 records, 8 input features, and 1 output label. You will use this file to train and test your model.
+* [diabetes.csv](https://github.com/mdfarragher/DSC/blob/master/BinaryClassification/DiabetesDetection/diabetes.csv) which contains 768 records, 8 input features, and 1 output label. You will use this file to train and test your model.
 
-You'll need to [download the dataset](#) and save it in your project folder to get started.
+You'll need to [download the dataset](https://github.com/mdfarragher/DSC/blob/master/BinaryClassification/DiabetesDetection/diabetes.csv) and save it in your project folder to get started.
 
 Here's a description of all columns in the file:
 * **Pregnancies**: the number of times the woman got pregnant
