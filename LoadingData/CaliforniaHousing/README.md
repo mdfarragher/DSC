@@ -155,14 +155,14 @@ The **sym** method draws a symbol for every houseing block in the dataset. The c
 
 The final **eop** method closes the plot and saves it to disk.
 
-We're ready to run the app. But on Windows, we have to do one more housekeeping task. There's an unfortunate bug in the Plplot library that makes it look in the wrong folder for font and color palette files.  We need to copy these files to a different location to get the library to work. 
+We're ready to run the app. But on Windows we have to do one more housekeeping task. There's an unfortunate bug in the Plplot library that makes it look in the wrong folder for font and color palette files.  We need to copy these files to a different location to get the library to work. 
 
 Go to the console (I prefer to use Powershell) and make sure you're in the project folder. Then type the following: 
 
 ```bash
-cd .\bin\Debug\netcoreapp3.0\
-copy .\runtimes\win-x64\native\plplot . -recurse
-cd ../../..
+$ cd .\bin\Debug\netcoreapp3.0\
+$ copy .\runtimes\win-x64\native\plplot . -recurse
+$ cd ../../..
 ```
 
 This copies the subfolder with all the font and color files into the folder of the executing assembly, where the Plplot library can find it. 
