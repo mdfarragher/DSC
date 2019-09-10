@@ -272,14 +272,11 @@ var prediction = predictionFunction.Predict(taxiTripSample);
 // sho the prediction
 Console.WriteLine($"Single prediction:");
 Console.WriteLine($"  Predicted fare: {prediction.FareAmount:0.####}");
-Console.WriteLine($"  Actual fare: 15.5");
 ```
 
 You use the **CreatePredictionEngine** method to set up a prediction engine. The two type arguments are the input data class and the class to hold the prediction. And once the prediction engine is set up, you can simply call **Predict** to make a single prediction.
 
-I happen to know that my trip is supposed to cost $15.50. But what will the model prediction be?
-
-Time to find out. Go to your terminal and run your code:
+Now go to your terminal and run your code:
 
 ```bash
 $ dotnet run
