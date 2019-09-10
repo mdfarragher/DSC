@@ -136,7 +136,6 @@ namespace TaxiFarePrediction
             // sho the prediction
             Console.WriteLine($"Single prediction:");
             Console.WriteLine($"  Predicted fare: {prediction.FareAmount:0.####}");
-            Console.WriteLine($"  Actual fare: 15.5");
 
             Console.ReadLine();
         }

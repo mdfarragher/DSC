@@ -272,14 +272,13 @@ var prediction = predictionFunction.Predict(taxiTripSample);
 // sho the prediction
 Console.WriteLine($"Single prediction:");
 Console.WriteLine($"  Predicted fare: {prediction.FareAmount:0.####}");
-Console.WriteLine($"  Actual fare: 15.5");
 ```
 
 You use the **CreatePredictionEngine** method to set up a prediction engine. The two type arguments are the input data class and the class to hold the prediction. And once the prediction engine is set up, you can simply call **Predict** to make a single prediction.
 
-I happen to know that my trip is supposed to cost $15.50. But what will the model prediction be?
+The trip should cost anywhere between $13.50 and $18.50, depending on the trip duration (which depends on the time of day). Will the model predict a fare in this range?  
 
-Time to find out. Go to your terminal and run your code:
+Let's find out. Go to your terminal and run your code:
 
 ```bash
 $ dotnet run
@@ -287,7 +286,7 @@ $ dotnet run
 
 What results do you get? What are your RMSE and MAE values? Is this a good result? 
 
-And how much does your model predict I have to pay for my taxi ride? 
+And how much does your model predict I have to pay for my taxi ride? Is the prediction in the range of accetable values for this trip? 
 
 Now make some changes to my trip. Change the vendor ID, or the distance, or the manner of payment. How does this affect the final fare prediction? And what do you think this means?  
 
