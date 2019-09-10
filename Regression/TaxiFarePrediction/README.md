@@ -289,6 +289,8 @@ What results do you get? What are your RMSE and MAE values? Is this a good resul
 
 And how much does your model predict I have to pay for my taxi ride? 
 
+Now make some changes to my trip. Change the vendor ID, or the distance, or the manner of payment. How does this affect the final fare prediction? And what do you think this means?  
+
 Think about the code in this assignment. How could you improve the accuracy of the model? What's your best RMSE value? 
 
 Share your results in our group!
