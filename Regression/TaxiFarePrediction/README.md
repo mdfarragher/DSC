@@ -258,12 +258,12 @@ var predictionFunction = mlContext.Model.CreatePredictionEngine<TaxiTrip, TaxiTr
 // prep a single taxi trip
 var taxiTripSample = new TaxiTrip()
 {
-    VendorId = "VTS",
+    VendorId = "2",
     RateCode = "1",
     PassengerCount = 1,
     TripDistance = 3.75f,
     PaymentType = "1",
-    FareAmount = 0 // actual fare for this trip = 15.5
+    FareAmount = 0 // the model will predict the actual fare for this trip
 };
 
 // make the prediction
@@ -277,7 +277,7 @@ Console.WriteLine($"  Actual fare: 15.5");
 
 You use the **CreatePredictionEngine** method to set up a prediction engine. The two type arguments are the input data class and the class to hold the prediction. And once the prediction engine is set up, you can simply call **Predict** to make a single prediction.
 
-I looked it up and my trip is supposed to cost $15.50. But what will the model prediction be?
+I happen to know that my trip is supposed to cost $15.50. But what will the model prediction be?
 
 Time to find out. Go to your terminal and run your code:
 

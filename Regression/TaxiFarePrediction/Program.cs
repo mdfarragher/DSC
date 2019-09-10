@@ -122,12 +122,12 @@ namespace TaxiFarePrediction
             // prep a single taxi trip
             var taxiTripSample = new TaxiTrip()
             {
-                VendorId = "VTS",
+                VendorId = "2",
                 RateCode = "1",
                 PassengerCount = 1,
                 TripDistance = 3.75f,
                 PaymentType = "1",
-                FareAmount = 0 // actual fare for this trip = 15.5
+                FareAmount = 0 // the model will predict the  fare for this trip
             };
 
             // make the prediction
