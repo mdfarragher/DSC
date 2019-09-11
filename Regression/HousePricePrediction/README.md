@@ -16,13 +16,12 @@ That's for you to find out!
 
 In this case study you'll be working with the Iowa House Price dataset. This data set describes the sale of individual residential property in Ames, Iowa from 2006 to 2010. 
 
-The data set contains 2930 records and a large number of feature columns involved in assessing home values. You can use any combination of features you like to generate your house price predictions.
+The data set contains 1460 records and a large number of feature columns involved in assessing home values. You can use any combination of features you like to generate your house price predictions.
 
-There are 2 files in the dataset:
-* [train.csv](https://github.com/mdfarragher/DSC/blob/master/Regression/HousePricePrediction/train.csv) which contains 1460 records, 80 input features, and one output label. You will use this file for training your model.
-* [test.csv](https://github.com/mdfarragher/DSC/blob/master/Regression/HousePricePrediction/test.csv) which contains 1459 records and 80 input features. You will use this file to test your trained model. 
+There is 1 file in the dataset:
+* [data.csv](https://github.com/mdfarragher/DSC/blob/master/Regression/HousePricePrediction/data.csv) which contains 1460 records, 80 input features, and one output label. You will use this file to train and evaluate your model.
 
-Download these two files and save them in your project folder.
+Download the file and save it in your project folder.
 
 Here's a description of all 81 columns in the training file:
 * SalePrice - the property's sale price in dollars. This is the target variable that you're trying to predict.
@@ -130,11 +129,11 @@ $ code .
 The rest is up to you! 
 
 # Your assignment
-I want you to build an app that reads the training and testing files in memory, processes them, and then trains a linear regression model on the data.
+I want you to build an app that reads the data file, processes it, and then trains a linear regression model on the data.
 
 You can select any combination of input features you like, and you can perform any kind of data processing you like on the columns. 
 
-Use the trained model to make house price predictions on all the houses in the test file. Calculate the best possible **RMSE** and **MAE** and share it in our group. 
+Partition the data and use the trained model to make house price predictions on all the houses in the test partition. Calculate the best possible **RMSE** and **MAE** and share it in our group. 
 
 See if you can get the RMSE as low as possible. Share in our group how you did it. Which features did you select, how did you process them, and how did you configure your model? 
 
