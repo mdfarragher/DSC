@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="BetterConsoleTables" Version="1.0.3" />
+    <PackageReference Include="BetterConsoleTables" Version="1.1.0" />
     <PackageReference Include="Microsoft.ML" Version="1.2.0" />
     <PackageReference Include="plplot" Version="5.13.7" />
   </ItemGroup>

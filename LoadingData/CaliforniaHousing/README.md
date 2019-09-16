@@ -262,13 +262,13 @@ Let's see if the conversion worked. Add the following helper method to the top o
 /// Helper method to write the machine learning pipeline to the console.
 /// </summary>
 /// <param name="preview">The data preview to write.</param>
-/// <param name="numberOfRows">The maximum number of rows to write.</param>
-public static void WritePreview(DataDebuggerPreview preview, int numberOfRows = 10)
+public static void WritePreview(DataDebuggerPreview preview)
 {
     // set up a console table
     var table = new Table(
         TableConfiguration.Unicode(),
-        (from c in preview.ColumnView select c.Column.Name).ToArray());
+        (from c in preview.ColumnView 
+            select new ColumnHeader(c.Column.Name)).ToArray());
 
     // fill the table with results
     foreach (var row in preview.RowView)
@@ -438,11 +438,10 @@ So let's fix that. Add the following helper method at the top of the **Program**
 /// </summary>
 /// <param name="preview">The data preview to write.</param>
 /// <param name="column">The name of the column to write.</param>
-/// <param name="numberOfRows">The maximum number of rows to write.</param>
-public static void WritePreviewColumn(DataDebuggerPreview preview, string column, int numberOfRows = 10)
+public static void WritePreviewColumn(DataDebuggerPreview preview, string column)
 {
     // set up a console table
-    var table = new Table(TableConfiguration.Unicode(), column);
+    var table = new Table(TableConfiguration.Unicode(), new ColumnHeader(column));
 
     // fill the table with results
     foreach (var row in preview.RowView)
