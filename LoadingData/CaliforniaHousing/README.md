@@ -26,12 +26,18 @@ We can use this data to train an app to predict the value of any house in and ou
 
 Unfortunately we cannot train on this dataset directly. The data needs to be processed first to make it suitable for training. This is what you will do in this assignment. 
 
-Let's get started. You need to build a new application from scratch by opening a terminal and creating a new NET Core console project:
+Let's get started. 
+
+In these assignments you will not be using the code in Github. Instead, you'll be building all the applications 100% from scratch. So please make sure to create a new folder somewhere to hold all of your assignments.
+
+Now please open a console window. You are going to create a new subfolder for this assignment and set up a blank console application:
 
 ```bash
 $ dotnet new console -o LoadingData
 $ cd LoadingData
 ```
+
+Also make sure to copy the dataset file(s) into this folder because the code you're going to type next will expect them here.  
 
 Now install the following packages
 
@@ -155,14 +161,24 @@ The **sym** method draws a symbol for every houseing block in the dataset. The c
 
 The final **eop** method closes the plot and saves it to disk.
 
+This is a good moment to save your work ;) 
+
 We're ready to run the app. But on Windows we have to do one more housekeeping task. There's an unfortunate bug in the Plplot library that makes it look in the wrong folder for font and color palette files.  We need to copy these files to a different location to get the library to work. 
 
 Go to the console (I prefer to use Powershell) and make sure you're in the project folder. Then type the following: 
 
 ```bash
+$ dotnet build
+```
+
+This will build the project and populate the bin folder.
+
+Now type the following (this example is in Powershell, use the equivalent copy command on other platforms):
+
+```bash
 $ cd .\bin\Debug\netcoreapp3.0\
 $ copy .\runtimes\win-x64\native\plplot . -recurse
-$ cd ../../..
+$ cd ..\..\..
 ```
 
 This copies the subfolder with all the font and color files into the folder of the executing assembly, where the Plplot library can find it. 
@@ -317,7 +333,7 @@ public class ToLocation
 
 We're going to use these classes in the next code snippet.
 
-Now scroll down to the bottom of the **Main** method and add the following code:
+Now scroll down to the bottom of the **Main** method and add the following code after step 1:
 
 ```csharp
 // step 2: bin the longitude
@@ -392,7 +408,7 @@ This code extendes the pipeline with two additional components:
 
 Let's see if this worked. 
 
-Remeber that code you added to preview the pipeline and write the first 10 records to the console? Look up that code now (including the part that calls **Fit**, **Transform** and **Preview**) and move it to the bottom of your **Main** method. 
+Remember that code you added to preview the pipeline and write the first 10 records to the console? Look up that code now (including the part that calls **Fit**, **Transform** and **Preview**) and move it to the bottom of your **Main** method. 
 
 Don't forget to edit the code so that it previews **pipeline3**.  
 
