@@ -4,3 +4,4 @@ MulticlassClassification/FlagToxicComments/test.csv
 MulticlassClassification/FlagToxicComments/train.csv
 BinaryClassification/HeartDiseasePrediction/processed.cleveland.data.csv
 LoadingData/CaliforniaHousing/data.png
+*.csv
