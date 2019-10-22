@@ -72,7 +72,10 @@ namespace IrisFlower
     public class IrisPrediction
     {
         [ColumnName("PredictedLabel")]
-        public string PredictedLabel;
+        public uint ClusterID;
+
+        [ColumnName("Score")]
+        public float[] Score;
     }
 
     // the rest of the code goes here....
@@ -83,7 +86,7 @@ The **IrisData** class holds one single flower. Note how the fields are tagged w
 
 We are loading the label in the 5th column, but we won't be using the label during training because we want the model to figure out the iris flower types on its own.
 
-There's also an **IrisPrediction** class which will hold a single prediction. And notice how the prediction score is actually an array? The model will generate 10 scores, one for every possible digit value. 
+There's also an **IrisPrediction** class which will hold a prediction for a single flower. The prediction consists of the ID of the cluster that the flower belongs to. Clusters are numbered from 1 upwards. And notice how the score field is an array? Each individual score value represents the distance of the flower to one specific cluster.  
 
 Next you'll need to load the data in memory:
 
