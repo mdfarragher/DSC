@@ -1,6 +1,6 @@
 FROM jupyter/scipy-notebook:latest
 
-# Install .NET CLI dependencies
+# Install .NET CLI dependencies.
 
 ARG NB_USER=jovyan
 ARG NB_UID=1000
