@@ -45,7 +45,7 @@ ENV DOTNET_RUNNING_IN_CONTAINER=true \
     NUGET_XMLDOC_MODE=skip
 
 # Trigger first run experience
-RUN dotnet
+RUN dotnet help
 
 # Copy demo notebooks
 COPY ./LoadingData/CaliforniaHousing/* ${HOME}/LoadingData/CaliforniaHousing/
