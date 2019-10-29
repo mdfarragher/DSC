@@ -44,11 +44,11 @@ ENV DOTNET_RUNNING_IN_CONTAINER=true \
     # Skip extraction of XML docs - generally not useful within an image/container - helps performance
     NUGET_XMLDOC_MODE=skip
 
-# Trigger first run experience by running arbitrary cmd
-RUN dotnet help
+# Trigger first run experience
+RUN dotnet
 
-# Copy notebooks
-# COPY ./NotebookExamples/ ${HOME}/Notebooks/
+# Copy demo notebooks
+COPY ./LoadingData/CaliforniaHousing/* ${HOME}/LoadingData/CaliforniaHousing/
 
 # Copy package sources
 COPY ./NuGet.config ${HOME}/nuget.config
@@ -65,5 +65,5 @@ RUN echo "$PATH"
 # Install C# kernel for Jupyter
 RUN dotnet try jupyter install
 
-# Set root to home folder
-WORKDIR ${HOME}
+# Set root to notebook folder
+WORKDIR ${HOME}/LoadingData/CaliforniaHousing/
