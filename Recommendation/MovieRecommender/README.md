@@ -40,7 +40,7 @@ Now install the following packages
 
 ```bash
 $ dotnet add package Microsoft.ML
-$ dotnet add package Microsoft.ML.Recommendation
+$ dotnet add package Microsoft.ML.Recommender
 ```
 
 Now you're ready to add some classes. You will need one class to hold a movie rating, and one to hold your model’s predictions.
