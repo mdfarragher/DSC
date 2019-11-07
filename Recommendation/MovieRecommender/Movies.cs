@@ -77,7 +77,11 @@ namespace MovieRecommender
                     line = reader.ReadLine();
                     string[] fields = line.Split(',');
                     int movieId = Int32.Parse(fields[0].ToString().TrimStart(new char[] { '0' }));
-                    string movieTitle = fields[1].ToString();
+
+                    // Nils Ottesen: support movie titles with commas
+                    // string movieTitle = fields[1].ToString();
+                    string movieTitle = string.Join(',', fields.Skip(1).Take(fields.Length-2));
+
                     result.Add(new Movie() { ID = movieId, Title = movieTitle });
                     index++;
                 }
