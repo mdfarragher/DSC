@@ -163,17 +163,28 @@ The final **eop** method closes the plot and saves it to disk.
 
 This is a good moment to save your work ;) 
 
-We're ready to run the app. But on Windows we have to do one more housekeeping task. There's an unfortunate bug in the Plplot library that makes it look in the wrong folder for font and color palette files.  We need to copy these files to a different location to get the library to work. 
+We're ready to run the app. But first we need to make sure that the **Plplot** library is available. 
 
-Go to the console (I prefer to use Powershell) and make sure you're in the project folder. Then type the following: 
+If you're using a Linux system, please type the following:
+
+```bash
+$ sudo apt-get install libplplot15
+$ sudo apt-get install plplot-driver-cairo
+```
+
+This will install Plplot on your system with an output driver for rendering PNG images.
+
+If you're on Windows, all the Plplot installation files are already present in the Nuget package. But we have to do a housekeeping task. There's an unfortunate bug in the Plplot library that makes it look in the wrong folder for font and color palette files.  We need to copy these files to a different location to get the library to work. 
+
+Open a Powershell terminal and make sure you're in the project folder. Then type the following: 
 
 ```bash
 $ dotnet build
 ```
 
-This will build the project and populate the bin folder.
+This will build the project and populate the bin folder. The Plplot library files are now present in the bin folder, but the font and color palette files have been placed in the wrong folder. We're going to fix that now. 
 
-Now type the following (this example is in Powershell, use the equivalent copy command on other platforms):
+Please type the following:
 
 ```bash
 $ cd .\bin\Debug\netcoreapp3.0\
@@ -181,9 +192,11 @@ $ copy .\runtimes\win-x64\native\plplot . -recurse
 $ cd ..\..\..
 ```
 
-This copies the subfolder with all the font and color files into the folder of the executing assembly, where the Plplot library can find it. 
+This copies the subfolder with all the font and color files into the folder of the executing assembly where the Plplot library can find it. 
 
-Now you're ready to run the app on the console. Type the following:
+That's it, you're now ready to run the app on the console in either Linux or Windows. 
+
+Type the following:
 
 ```bash
 $ dotnet run
