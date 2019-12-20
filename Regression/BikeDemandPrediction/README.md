@@ -103,7 +103,7 @@ namespace BikeDemand
 }
 ```
 
-The **DemandObservation** class holds one single taxi trip. Note how each field is tagged with a **LoadColumn** attribute that tells the CSV data loading code which column to import data from.
+The **DemandObservation** class holds one single bike trip. Note how each field is tagged with a **LoadColumn** attribute that tells the CSV data loading code which column to import data from.
 
 You're also declaring a **DemandPrediction** class which will hold a single bike demand prediction.
 
