@@ -1,8 +1,8 @@
 # Data Science with C# and ML.NET
 
-This repository contains all course assignments of my Data Science with C# and ML.NET course and will get you up to speed with Microsoft's new ML.NET library.
-
 ![Data Science with C# and ML.NET](./assets/DSC.jpg)
+
+This repository contains all course assignments of my Data Science with C# and ML.NET course and will get you up to speed with Microsoft's new ML.NET library.
 
 By working through the code examples, you will build a solid foundation in data science and learn how to design, train, and evaluate complex AI models. I will provide you with all the source code, libraries, and data sets you need to get started.
 
@@ -13,7 +13,7 @@ If you prefer a full-featured e-learning experience with live coaching, please c
 https://www.machinelearningadvantage.com/datascience-with-csharp
 
 
-## Table of contents
+# Table of contents
 
 Transforming data: [Processing California housing data](./tree/master/LoadingData/CaliforniaHousing)
 
