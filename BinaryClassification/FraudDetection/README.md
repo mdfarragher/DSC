@@ -21,9 +21,9 @@ Note that the dataset is highly unbalanced, the positive class (frauds) account 
 The data set contains 285k records, 30 feature columns, and a single label indicating if the transaction is fraudulent or not. You can use any combination of features you like to generate your fraud predictions.
 
 There is a single file in the dataset:
-* [creditcard.csv](https://www.kaggle.com/mlg-ulb/creditcardfraud/downloads/creditcard.csv/3) which contains 285k records, 30 input features, and one output label. You will use this file to train and test your model.
+* [creditcard.csv](https://www.kaggle.com/mlg-ulb/creditcardfraud/version/3) which contains 285k records, 30 input features, and one output label. You will use this file to train and test your model.
 
-The file is about 150 MB in size. You'll need to [download it from Kaggle](https://www.kaggle.com/mlg-ulb/creditcardfraud/downloads/creditcard.csv/3) to get started. [Create a Kaggle account](https://www.kaggle.com/account/login) if you don't have one yet. 
+The file is about 150 MB in size. You'll need to login to Kaggle, [access the credit card fraud page](https://www.kaggle.com/mlg-ulb/creditcardfraud/version/3?select=creditcard.csv) and then click the download button to download the dataset. [Create a Kaggle account](https://www.kaggle.com/account/login) if you don't have one yet. 
 
 Here's a description of all 31 columns in the data file:
 * Time: Number of seconds elapsed between this transaction and the first transaction in the dataset
