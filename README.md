@@ -1,4 +1,4 @@
-# Data Science with C# and ML.NET
+# Data Science with C# and ML.NET (v2)
 
 ![Data Science with C# and ML.NET](./assets/DSC.jpg)
 
