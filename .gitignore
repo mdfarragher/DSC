@@ -6,3 +6,5 @@ LoadingData/CaliforniaHousing/data.png
 MulticlassClassification/DigitRecognition/mnist_train.csv
 MulticlassClassification/DigitRecognition/mnist_test.csv
 Regression/TaxiFarePrediction/yellow_tripdata_2018-12.csv
+*.csv
+*.zip
